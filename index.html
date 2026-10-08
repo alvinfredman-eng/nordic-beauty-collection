@@ -5,58 +5,1344 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Nordic Beauty Collection – utvalda kroppsvårdsprodukter från GRATiAE med leverans i hela Sverige.">
   <title>Nordic Beauty Collection | GRATiAE kroppsvård</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317110c'/%3E%3Cpath d='M[...]
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317110c'/%3E%3Cpath d='M16 45.5c2.8-8.7 7.4-15.4 14.2-20.7 4.9-3.8 10.3-6.3 14.9-7.4 0 0-3.7 8.9-13.2 18.5-4.1 4.1-8.5 8.3-15.9 9.6zm17.3-2.3c7.5-5.3 11.6-12.9 12.5-22.2 0 0-7.4 3.8-12.8 9.9-5.8 6.6-8.6 11.3-9.7 14.9 3.2.6 6.4.8 10 0zm-6.6-18.7c3.2-3.4 7-6.2 11.8-8.7-2.7 4.9-5.6 9.5-10 13.7-2.4 2.2-4.8 4.0-7.6 5.6 1-3.1 3-6.2 5.8-10.6z' fill='%23f7f2e8'/%3E%3C/svg%3E">
   <style>
-    :root{--ink:#17110c;--cream:#f7f2e8;--paper:#fffdfa;--gold:#b99143;--line:#ded4c2;--muted:#6e6258;--green:#163f35;--white:#fff;--shadow:0 22px 70px rgba(40,27,12,.12)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button,input,select{font:inherit}.wrap{width:min(100% - 40px,1160px);margin:0 auto}.brand{letter-spacing:.16em;font-size:.72rem;font-weight:900}.navlinks{display:flex;align-items:center;gap:30px}.navlinks a{font-size:.78rem;font-weight:700;color:var(--muted)}.bag{border:1px solid rgba(23,17,12,.18);background:transparent;border-radius:999px;padding:10px 14px;display:flex;align-items:center;gap:10px;cursor:pointer;font-weight:800;color:var(--ink)}.bag b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--white);font-size:.76rem}.header-actions{display:flex;align-items:center;gap:16px}.hero{padding:74px 0 54px}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:54px;align-items:center}.eyebrow{margin:0 0 18px;color:var(--green);font-size:.79rem;font-weight:850;letter-spacing:.14em;text-transform:uppercase}.hero h1{margin:0;color:var(--ink);font-family:Georgia,serif;font-size:clamp(2.8rem,5vw,5rem);line-height:.96;letter-spacing:-.055em}.hero h1 em{font-style:normal;color:var(--green)}.lead{margin:18px 0 30px;color:var(--muted);font-size:1.08rem;line-height:1.7;max-width:620px}.cta-row{display:flex;flex-wrap:wrap;gap:16px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 22px;border-radius:999px;border:1px solid rgba(23,17,12,.15);font-weight:800;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}.btn:hover{transform:translateY(-1px)}.btn-primary{background:var(--green);color:#fff;box-shadow:0 18px 35px rgba(22,63,53,.18)}.btn-secondary{background:var(--paper);color:var(--ink)}.mini-stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:26px}.mini-stats strong{display:block;font-size:1.45rem;font-family:Georgia,serif}.mini-stats span{color:var(--muted);font-size:.8rem}.hero-photo{position:relative;min-height:600px;border-radius:34px;background:linear-gradient(145deg,#ebe1d0,#f8f4ee);overflow:hidden;border:1px solid rgba(23,17,12,.08);box-shadow:var(--shadow)}.hero-photo .glow{position:absolute;inset:8% auto auto 8%;width:46%;height:46%;background:radial-gradient(circle,#f8d9b5 0%,rgba(248,217,181,0) 70%);filter:blur(20px)}.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero-photo .badge{position:absolute;left:24px;bottom:24px;background:rgba(255,255,255,.86);backdrop-filter:blur(18px);padding:17px 18px;border:1px solid rgba(23,17,12,.08);border-radius:18px;box-shadow:0 8px 28px rgba(23,17,12,.07)}.hero-photo .badge strong{display:block;font-size:1.1rem}.hero-photo .badge span{color:var(--muted);font-size:.8rem}.trust{border-block:1px solid var(--line);background:var(--paper)}.trust-row{min-height:92px;display:grid;grid-template-columns:repeat(3,1fr);align-items:center}.trust-item{text-align:center;font-weight:800}.trust-item small{display:block;margin-top:4px;color:var(--muted);font-weight:600}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.card{display:flex;flex-direction:column;overflow:hidden;border:1px solid rgba(23,17,12,.08);background:var(--paper);border-radius:26px;box-shadow:0 18px 50px rgba(26,20,12,.06)}.card-media{position:relative;background:#efe7dc;border-bottom:1px solid rgba(23,17,12,.05)}.card-media img{width:100%;height:330px;object-fit:cover}.card.wide .card-media img{height:360px}.tag{position:absolute;left:18px;top:18px;background:rgba(255,255,255,.86);backdrop-filter:blur(8px);color:var(--ink);padding:8px 10px;border-radius:999px;font-size:.72rem;font-weight:800;border:1px solid rgba(23,17,12,.06)}.card-body{display:flex;flex-direction:column;justify-content:space-between;gap:18px;padding:22px 22px 20px}.card-body h3{margin:0;font-size:1.35rem;font-family:Georgia,serif}.card-body p{margin:0;color:var(--muted);line-height:1.6}.meta{display:flex;justify-content:space-between;align-items:end;gap:16px;padding-top:8px}.price{font-weight:900;font-size:1.7rem;letter-spacing:-.04em}.price small{font-size:.6em;vertical-align:middle;color:var(--muted)}.pick{display:inline-flex;align-items:center;justify-content:center;min-width:122px;padding:10px 14px;border-radius:999px;border:1px solid rgba(23,17,12,.15);background:var(--ink);color:#fff;font-weight:800;cursor:pointer}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}.section-head h2{margin:0;font-family:Georgia,serif;font-size:clamp(2.2rem,4vw,3.2rem);letter-spacing:-.04em}.section-head p{margin:0;color:var(--muted);max-width:560px;line-height:1.6}.routine{background:var(--green);color:#fff}.routine-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}.routine h2{margin:0;font-family:Georgia,serif;font-size:clamp(2.2rem,4vw,3.6rem);letter-spacing:-.04em;line-height:1.02}.steps{display:grid;gap:16px;margin-top:16px}.step{display:grid;grid-template-columns:26px 1fr;gap:16px;padding:18px 0;border-top:1px solid rgba(255,255,255,.18)}.step:first-child{border-top:none}.step .n{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.12);font-weight:900}.step strong{display:block;margin-bottom:4px}.step p{margin:0;color:rgba(255,255,255,.82);line-height:1.6}.legal{background:rgba(255,255,255,.15)}.legal-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}.legal h2{margin:0;font-family:Georgia,serif;font-size:clamp(2.1rem,4vw,3.1rem);letter-spacing:-.04em}.legal p{color:var(--muted);line-height:1.7}.details-box{display:grid;gap:14px}.details-box details{background:rgba(255,255,255,.48);border:1px solid rgba(23,17,12,.08);border-radius:18px;padding:0 18px;overflow:hidden}.details-box summary{list-style:none;cursor:pointer;font-weight:800;padding:18px 0}.details-box summary::-webkit-details-marker{display:none}.details-box p{margin:0 0 18px;padding:0 0 18px;border-top:1px solid rgba(23,17,12,.08);padding-top:16px}.info-card{padding:24px;border:1px solid rgba(23,17,12,.08);background:var(--paper);border-radius:22px}.info-card ul{margin:10px 0 0;padding-left:18px;color:var(--muted);line-height:1.8}.notice{padding:20px;border:1px solid #d9c89e;background:#fff9e8;color:#56451e;margin-bottom:26px;border-radius:18px}.notice strong{display:block}.product-option{display:grid;gap:6px;margin:18px 0}.product-option label{font-weight:700}.product-option select{padding:12px 14px;border-radius:12px;border:1px solid rgba(23,17,12,.15);background:#fff}footer{padding:52px 0;background:var(--ink);color:#fff}.foot{display:grid;grid-template-columns:1fr 1fr;gap:30px}.foot p{color:#cfc5ba}.smallprint{font-size:.76rem;color:#a99e94}.contact-needed{color:#e7c970;font-weight:760}.order{position:fixed;inset:0;display:grid;place-items:center;background:rgba(10,10,10,.3);opacity:0;pointer-events:none;transition:opacity .2s ease}.order.open{opacity:1;pointer-events:auto}.panel{width:min(94vw,540px);background:#fffdf9;border:1px solid rgba(23,17,12,.08);border-radius:28px;box-shadow:var(--shadow);padding:22px}.panel-head{display:flex;justify-content:space-between;align-items:start;gap:20px;margin-bottom:18px}.panel-head h2{margin:0;font-family:Georgia,serif;font-size:2.1rem;letter-spacing:-.04em}.close{border:1px solid rgba(23,17,12,.15);background:transparent;border-radius:50%;width:38px;height:38px;cursor:pointer}.cart-lines{display:grid;gap:12px;max-height:280px;overflow:auto;margin-bottom:18px}.cart-line{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:12px 10px;border:1px solid rgba(23,17,12,.08);border-radius:14px}.cart-line .name{font-weight:700}.cart-line .controls{display:flex;align-items:center;gap:8px}.cart-line .controls button{width:26px;height:26px;border-radius:50%;border:1px solid rgba(23,17,12,.15);background:#fff;cursor:pointer}.total{display:flex;justify-content:space-between;font-weight:900;padding-top:12px;border-top:1px solid rgba(23,17,12,.1);margin:10px 0 16px}.order-form{display:grid;gap:12px}.order-form input,.order-form select{width:100%;padding:12px 14px;border:1px solid rgba(23,17,12,.15);border-radius:12px;background:#fff}.order-form button{padding:14px 18px;border:none;background:var(--green);color:#fff;border-radius:14px;font-weight:800;cursor:pointer}.toast{position:fixed;right:22px;bottom:22px;background:rgba(23,17,12,.92);color:#fff;padding:12px 16px;border-radius:999px;opacity:0;transform:translateY(12px);transition:opacity .2s ease,transform .2s ease;pointer-events:none}.toast.show{opacity:1;transform:translateY(0)}
-    @media(max-width:900px){.hero-grid,.routine-grid,.legal-grid,.products{grid-template-columns:1fr}.hero-photo{min-height:500px}.card{min-height:430px}.hero h1{font-size:clamp(2.5rem,8vw,4rem)}.section-head{flex-direction:column;align-items:start}.navlinks>a{display:none}.foot{grid-template-columns:1fr}} 
-    @media(max-width:620px){.wrap{width:min(100% - 24px,1160px)}nav{height:66px}.hero{padding-top:48px}.hero-photo{min-height:420px}.trust-row{grid-template-columns:1fr}.header-actions{gap:10px}.bag{padding:8px 10px}.brand{letter-spacing:.1em;font-size:.66rem}.card-media img{height:290px}.panel{padding:18px}.panel-head h2{font-size:1.6rem}.cart-line{grid-template-columns:1fr auto;}.cart-line .controls{grid-column:2}} 
+    :root {
+      --ink: #17110c;
+      --cream: #f7f2e8;
+      --paper: #fffdfa;
+      --gold: #b99143;
+      --gold-soft: #e8d5a7;
+      --line: #e4dccb;
+      --muted: #6e6258;
+      --green: #163f35;
+      --green-deep: #0e2a24;
+      --white: #fff;
+      --shadow: 0 22px 70px rgba(40, 27, 12, 0.12);
+      --shadow-soft: 0 18px 40px rgba(23, 17, 12, 0.08);
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #f8f3eb 0%, #fffaf3 100%);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select {
+      font: inherit;
+    }
+
+    .wrap {
+      width: min(100% - 32px, 1160px);
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(14px);
+      background: rgba(247, 242, 232, 0.82);
+      border-bottom: 1px solid rgba(23, 17, 12, 0.08);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 78px;
+    }
+
+    .brand {
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .navlinks a {
+      transition: color 0.2s ease;
+    }
+
+    .navlinks a:hover {
+      color: var(--ink);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      padding: 0.9rem 1.5rem;
+      cursor: pointer;
+      font-weight: 700;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn.primary {
+      background: var(--green);
+      color: var(--white);
+      box-shadow: 0 10px 24px rgba(22, 63, 53, 0.18);
+    }
+
+    .btn.secondary {
+      background: rgba(255,255,255,0.35);
+      border-color: rgba(23,17,12,0.1);
+      color: var(--ink);
+    }
+
+    .cart-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--ink);
+      color: var(--white);
+      border: none;
+      border-radius: 999px;
+      padding: 0.7rem 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .cart-badge {
+      display: inline-grid;
+      place-items: center;
+      min-width: 24px;
+      height: 24px;
+      padding: 0 6px;
+      background: var(--gold);
+      color: var(--ink);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    .hero {
+      padding: 64px 0 32px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+      font-size: 0.74rem;
+      color: var(--green);
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2.7rem, 5vw, 5rem);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+      font-weight: 800;
+    }
+
+    .hero h1 em {
+      color: var(--green);
+      font-style: normal;
+    }
+
+    .lead {
+      margin: 22px 0 0;
+      max-width: 560px;
+      color: var(--muted);
+      font-size: 1.12rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 30px 0 18px;
+    }
+
+    .hero-meta {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .hero-meta li {
+      position: relative;
+      padding-left: 18px;
+    }
+
+    .hero-meta li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 620px;
+      display: grid;
+      place-items: center;
+    }
+
+    .hero-card {
+      position: relative;
+      width: min(100%, 540px);
+      background: radial-gradient(circle at top, #f4e2bf 0%, #f7f2e8 40%, #efe2d0 100%);
+      border: 1px solid rgba(23,17,12,0.05);
+      border-radius: 34px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 18px 18px auto auto;
+      width: 130px;
+      height: 130px;
+      background: rgba(185, 145, 67, 0.12);
+      border-radius: 50%;
+      filter: blur(12px);
+    }
+
+    .product-shot {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: end;
+      min-height: 470px;
+    }
+
+    .bottle {
+      position: relative;
+      background: linear-gradient(180deg, #e5d8c1 0%, #f7f2e8 100%);
+      border: 1px solid rgba(23,17,12,0.08);
+      border-radius: 30px;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+    }
+
+    .bottle.scrub {
+      height: 360px;
+      transform: rotate(-5deg);
+    }
+
+    .bottle.butter {
+      height: 290px;
+      transform: rotate(8deg);
+    }
+
+    .bottle::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 26%;
+      background: linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0));
+    }
+
+    .bottle::after {
+      content: "";
+      position: absolute;
+      inset: 18px auto auto 18px;
+      width: 36px;
+      height: 70px;
+      border-radius: 12px;
+      background: rgba(23,17,12,0.08);
+    }
+
+    .bottle-label {
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      bottom: 24px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.88);
+      text-align: center;
+      border: 1px solid rgba(23,17,12,0.1);
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--green);
+    }
+
+    .mini-badge {
+      position: absolute;
+      right: 22px;
+      bottom: 22px;
+      z-index: 2;
+      background: var(--green);
+      color: var(--white);
+      padding: 0.6rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .trust-bar {
+      padding: 12px 0 0;
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .trust-item {
+      background: rgba(255,255,255,0.55);
+      border: 1px solid rgba(23,17,12,0.06);
+      border-radius: 18px;
+      padding: 1.2rem 1.3rem;
+      font-weight: 700;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .trust-item small {
+      display: block;
+      margin-top: 4px;
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    .section {
+      padding: 84px 0;
+    }
+
+    .section-head {
+      margin-bottom: 28px;
+      max-width: 700px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.05em;
+    }
+
+    .section-head p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .product-card {
+      background: rgba(255,255,255,0.8);
+      border: 1px solid rgba(23,17,12,0.06);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card.featured {
+      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(247, 242, 232, 0.9));
+      border-color: rgba(185, 145, 67, 0.35);
+    }
+
+    .product-image {
+      position: relative;
+      min-height: 270px;
+      padding: 20px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(180deg, #f3e3c8 0%, #f8f3ec 100%);
+    }
+
+    .product-image .bottle {
+      height: 210px;
+      width: 62%;
+      transform: none;
+    }
+
+    .product-image .package-icon {
+      position: absolute;
+      inset: auto 20px 18px auto;
+      background: rgba(22,63,53,0.92);
+      color: var(--white);
+      border-radius: 999px;
+      padding: 0.5rem 0.8rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .product-body {
+      padding: 1.25rem 1.2rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .product-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+
+    .product-top h3 {
+      margin: 0;
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 0.45rem 0.7rem;
+      background: rgba(185,145,67,0.12);
+      color: var(--green);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .product-body p {
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .product-body label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .product-body select {
+      width: 100%;
+      padding: 0.8rem 0.9rem;
+      border: 1px solid rgba(23,17,12,0.12);
+      border-radius: 12px;
+      background: rgba(247,242,232,0.8);
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+
+    .product-footer {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .add-btn {
+      border: none;
+      background: var(--ink);
+      color: var(--white);
+      border-radius: 999px;
+      padding: 0.8rem 1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .benefits {
+      background: linear-gradient(180deg, rgba(22, 63, 53, 0.04), rgba(185, 145, 67, 0.07));
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .text-stack {
+      display: grid;
+      gap: 16px;
+    }
+
+    .bullet-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 10px;
+    }
+
+    .bullet-box {
+      background: rgba(255,255,255,0.75);
+      border: 1px solid rgba(23,17,12,0.06);
+      border-radius: 20px;
+      padding: 1.1rem 1rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .bullet-box strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 1.08rem;
+    }
+
+    .benefit-panel {
+      background: linear-gradient(180deg, #163f35 0%, #0e2a24 100%);
+      border-radius: 30px;
+      padding: 28px;
+      color: rgba(255,255,255,0.95);
+      box-shadow: var(--shadow);
+    }
+
+    .benefit-panel h3 {
+      margin-top: 0;
+      font-size: clamp(1.6rem, 2vw, 2.2rem);
+      letter-spacing: -0.04em;
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0 0;
+      display: grid;
+      gap: 16px;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 32px;
+      line-height: 1.45;
+      color: rgba(255,255,255,0.8);
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #d8bb71;
+      font-weight: 900;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    blockquote {
+      margin: 0;
+      background: rgba(255,255,255,0.8);
+      border: 1px solid rgba(23,17,12,0.06);
+      border-radius: 24px;
+      padding: 1.4rem 1.2rem;
+      box-shadow: var(--shadow-soft);
+      color: var(--ink);
+    }
+
+    blockquote p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .person {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+    }
+
+    .avatar {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #e9d8aa, #d2b36e);
+      color: var(--ink);
+      font-size: 0.85rem;
+      font-weight: 800;
+    }
+
+    .faq-wrap {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .faq-panel {
+      display: grid;
+      gap: 16px;
+    }
+
+    details {
+      background: rgba(255,255,255,0.8);
+      border: 1px solid rgba(23,17,12,0.06);
+      border-radius: 18px;
+      padding: 1rem 1rem 0.8rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    details p {
+      margin: 14px 0 0;
+      color: var(--muted);
+    }
+
+    .cta-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      background: linear-gradient(135deg, #f1e1bc 0%, #f7efe2 100%);
+      border: 1px solid rgba(23,17,12,0.04);
+      border-radius: 30px;
+      padding: 2rem 2.2rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .cta-box h2 {
+      margin: 0;
+      font-size: clamp(2rem, 3vw, 3rem);
+      letter-spacing: -0.05em;
+    }
+
+    footer {
+      padding: 26px 0 60px;
+      color: var(--muted);
+    }
+
+    .foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      border-top: 1px solid rgba(23,17,12,0.08);
+      padding-top: 22px;
+    }
+
+    .foot p {
+      margin: 10px 0 0;
+    }
+
+    .smallprint {
+      font-size: 0.85rem;
+    }
+
+    .order {
+      position: fixed;
+      inset: 0;
+      background: rgba(17, 13, 9, 0.45);
+      display: flex;
+      justify-content: flex-end;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+      z-index: 100;
+    }
+
+    .order.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .panel {
+      width: min(100%, 440px);
+      height: 100%;
+      background: var(--paper);
+      box-shadow: -30px 0 50px rgba(17,13,9,0.2);
+      padding: 22px 18px;
+      transform: translateX(24px);
+      transition: transform 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    .order.open .panel {
+      transform: translateX(0);
+    }
+
+    .panel-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .panel-head .eyebrow {
+      margin-bottom: 6px;
+    }
+
+    .panel-head h2 {
+      margin: 0;
+      font-size: 2rem;
+      line-height: 1.1;
+      letter-spacing: -0.05em;
+    }
+
+    .close {
+      border: none;
+      background: rgba(23,17,12,0.06);
+      color: var(--ink);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    .cart-list {
+      display: grid;
+      gap: 12px;
+      margin: 12px 0 18px;
+    }
+
+    .cart-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      border: 1px solid rgba(23,17,12,0.06);
+      background: rgba(247,242,232,0.7);
+      border-radius: 14px;
+      padding: 0.9rem 0.8rem;
+    }
+
+    .name {
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .qty-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid rgba(23,17,12,0.12);
+      background: var(--white);
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: var(--ink);
+    }
+
+    .panel-summary {
+      margin-top: auto;
+      border-top: 1px solid rgba(23,17,12,0.08);
+      padding-top: 18px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .summary-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .panel-summary label {
+      display: grid;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .panel-summary input, .panel-summary select {
+      border: 1px solid rgba(23,17,12,0.12);
+      background: rgba(247,242,232,0.7);
+      border-radius: 12px;
+      min-height: 48px;
+      padding: 0.8rem 0.9rem;
+      color: var(--ink);
+      font-size: 1rem;
+    }
+
+    .wide {
+      width: 100%;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 28px;
+      transform: translate(-50%, 18px);
+      background: rgba(23,17,12,0.95);
+      color: var(--white);
+      border-radius: 999px;
+      padding: 0.8rem 1.1rem;
+      box-shadow: 0 30px 40px rgba(17,13,9,0.22);
+      opacity: 0;
+      transition: opacity 0.25s ease, transform 0.25s ease;
+      z-index: 110;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid, .benefits-grid, .faq-wrap, .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .hero-visual {
+        min-height: 420px;
+      }
+
+      .cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .wrap {
+        width: min(100% - 24px, 1160px);
+      }
+
+      .navlinks {
+        display: none;
+      }
+
+      .header-inner {
+        min-height: 68px;
+      }
+
+      .hero {
+        padding-top: 40px;
+      }
+
+      .product-grid, .reviews-grid, .bullet-grid, .trust-row {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        padding: 18px;
+      }
+
+      .product-shot {
+        min-height: 360px;
+      }
+
+      .foot {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   </style>
 </head>
 <body>
-  <header><nav class="wrap"><a class="brand" href="#">NORDIC BEAUTY COLLECTION</a><div class="navlinks"><a href="#produkter">Produkter</a><a href="#villkor">Villkor</a></div><div class="header-actions"><button class="bag" type="button" onclick="openCart()">Kundvagn <b id="cartCount">0</b></button></div></nav></header>
-  <main>
-    <section class="hero"><div class="wrap hero-grid"><div><p class="eyebrow">Hudvård från Gratiae</p><h1>Två steg till <em>mjukare</em> hud.</h1><p class="lead">Exfoliera först. Återfukta sedan. Vår kombination av fördjupande saltskrubb och närande kroppssmör ger huden ett lyxigt, mjukt resultat som håller länge.</p><div class="cta-row"><a class="btn btn-primary" href="#produkter">Se produkterna</a><button class="btn btn-secondary" type="button" onclick="openCart()">Gå till kundvagn</button></div><div class="mini-stats"><div><strong>4.9/5</strong><span>kunder</span></div><div><strong>48h</strong><span>leverans</span></div><div><strong>14 dag</strong><span>ångerrätt</span></div></div></div><div class="hero-photo"><div class="glow"></div><img src="assets/body-butter.jpg" alt="GRATiAE Silky Body Butter produkter"><div class="badge"><strong>Body Ritual</strong><span>Saltkrubb + kroppssmör</span></div></div></div></section>
-    <div class="trust"><div class="wrap trust-row"><div class="trust-item">Leverans i Sverige<small>Frakt med PostNord</small></div><div class="trust-item">Betala tryggt<small>Klarna, kort och Swish</small></div><div class="trust-item">Kundservice<small>Snabb svar inom 24h</small></div></div></div>
-    <section id="produkter"><div class="wrap"><div class="section-head"><h2>Vårt sortiment</h2><p>Välj doft och bygg din rutin. Paketet innehåller en saltskrubb och ett kroppssmör.</p></div><div class="products">
-      <article class="card"><div class="card-media"><img src="assets/salt-scrub.jpg" alt="GRATiAE Exfoliating Body Salt Scrub"><span class="tag">425 g</span></div><div class="card-body"><div><h3>Exfoliating Body Salt Scrub</h3><p>En finmalen, växtbaserad kroppsskrubb som lämnar huden mjuk, jämn och glödande.</p></div><div class="meta"><div class="price">299 kr</div><button class="pick" type="button" onclick="addSelected('scrub','scrubScent')">Välj</button></div></div></article>
-      <article class="card"><div class="card-media"><img src="assets/body-butter.jpg" alt="GRATiAE Silky Body Butter 175 ml"><span class="tag">175 ml</span></div><div class="card-body"><div><h3>Silky Body Butter</h3><p>En rik, återfuktande kroppssmör som förser huden med långvarig mjukhet och näring.</p></div><div class="meta"><div class="price">299 kr</div><button class="pick" type="button" onclick="addSelected('butter','butterScent')">Välj</button></div></div></article>
-      <article class="card wide"><div class="card-media"><img src="assets/1000021318.jpg" alt="Paket med GRATiAE saltskrubb och kroppssmör"><span class="tag">Spara 50 kr</span></div><div class="card-body"><div><h3>Body Ritual-paket</h3><p>Det bästa av både exfolierande skrubb och närande kroppssmör – byggd för en lyxig, hållbar rutin.</p></div><div class="meta"><div class="price">549 kr</div><button class="pick" type="button" onclick="addPackage()">Välj paket</button></div></div></article>
-    </div></div></section>
-    <section id="sa-fungerar-det" class="routine"><div class="wrap routine-grid"><div><p class="eyebrow" style="color:#d1b56f">En bättre helhet</p><h2>Skrubb och fukt – i rätt ordning.</h2></div><div class="steps"><div class="step"><div class="n">1</div><div><strong>Exfoliera</strong><p>Applicera saltskrubben i cirkulära rörelser på torr eller lätt fuktad hud för att avlägsna döda hudceller.</p></div></div><div class="step"><div class="n">2</div><div><strong>Återfukta</strong><p>Följ direkt med kroppssmör för att låsa in fukt och ge huden en silkig, len finish.</p></div></div><div class="step"><div class="n">3</div><div><strong>Fortsätt</strong><p>Använd rutinen 2–3 gånger i veckan för jämn, mjuk och fräsch hud året om.</p></div></div></div></div></section>
-    <section id="villkor" class="legal"><div class="wrap legal-grid"><div><p class="eyebrow">Trygg e-handel</p><h2>Villkor och integritet</h2><p>Detta är ett utkast för Nordic Beauty Collection HB. Informationen nedan är avsedd att ge kunderna tydliga villkor inför lansering och onlineköp.</p><div class="info-card"><strong>Frakt & leverans</strong><ul><li>Leverans sker med PostNord inom Sverige.</li><li>Fraktkostnad visas i kassan innan betalning.</li><li>Leveranstid beror på varulager och postgång.</li></ul></div></div><div class="details-box"><div class="notice"><strong>Viktigt:</strong> Detta är ett prototypflöde för beställning och kundvagn. Informationen kan justeras efter registrering av företag och betalningslösning.</div><details open><summary>Köpvillkor</summary><p>Säljare är Nordic Beauty Collection HB. Organisationsnummer läggs till efter registrering. Kontaktuppgifter och returadress publiceras i samband med lansering.</p></details><details><summary>Betalning</summary><p>Planerade betalsätt är Klarna, kortbetalning och Swish. Exakta betalningsvillkor visas i kassan när tjänsterna har aktiverats.</p></details><details><summary>Leverans och frakt</summary><p>Leverans sker med PostNord inom Sverige. Fraktkostnaden beräknas och visas innan kunden slutför köpet. Ingen fri frakt erbjuds.</p></details><details><summary>Ångerrätt och retur</summary><p>Som konsument har du normalt 14 dagars ångerrätt från dagen efter att du tagit emot varan. Meddela oss tydligt om du vill ångra köpet.</p></details><details><summary>Reklamation</summary><p>Om en vara är felaktig ska du kontakta oss så snart som möjligt med ordernummer, beskrivning och gärna bild. Dina lagstadgade rättigheter gäller.</p></details><details><summary>Integritetspolicy</summary><p>Nordic Beauty Collection HB är personuppgiftsansvarigt för uppgifter som behövs för beställning, betalning, leverans, kundservice och reklamation.</p></details></div></div></section>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">NORDIC BEAUTY COLLECTION</a>
+      <nav class="navlinks" aria-label="Huvudmeny">
+        <a href="#produkter">Produkter</a>
+        <a href="#resultat">Resultat</a>
+        <a href="#kunder">Kunder</a>
+        <a href="#villkor">Villkor</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-button" type="button" onclick="openCart()">
+          Kundvagn <span id="cartCount" class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Hudvård från Gratiae</p>
+          <h1>Två steg till <em>mjukare</em> hud.</h1>
+          <p class="lead">Exfoliera först. Återfukta djupt. Skapa en kroppsrutin som känns lyxig, enkel och effektiv i vardagen.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#produkter">Shoppa nu</a>
+            <button class="btn secondary" type="button" onclick="openCart()">Se kundvagn</button>
+          </div>
+          <ul class="hero-meta">
+            <li>Leverans i hela Sverige</li>
+            <li>Skön, lärd och lätt att använda</li>
+            <li>Träning för huden, inte mot den</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-label="Produkter från Nordic Beauty Collection">
+          <div class="hero-card">
+            <div class="product-shot">
+              <div class="bottle scrub">
+                <div class="bottle-label">Salt Scrub</div>
+              </div>
+              <div class="bottle butter">
+                <div class="bottle-label">Body Butter</div>
+              </div>
+              <div class="mini-badge">Svensk kroppsvård</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar" aria-label="Viktiga egenskaper">
+      <div class="wrap trust-row">
+        <div class="trust-item">Leverans i Sverige<small>Frakt med PostNord</small></div>
+        <div class="trust-item">Betala tryggt<small>Klarna, kort och Swish</small></div>
+        <div class="trust-item">Sotad kvalitet<small>Formulerad för daglig återfuktning</small></div>
+      </div>
+    </section>
+
+    <section id="produkter" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Vårt sortiment</p>
+          <h2>En enkel rutin för mjukare, jämnare hud.</h2>
+          <p>Välj doft och bygg din egen ritual. Varje produkt är skapad för att ge en sensuell, återfuktande känsla utan krångel.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image">
+              <div class="bottle scrub">
+                <div class="bottle-label">Salt Scrub</div>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-top">
+                <h3>Body Salt Scrub</h3>
+                <span class="tag">425 g</span>
+              </div>
+              <p>Exfolierar mjukt, hjälper huden att känna sig jämn och förberedd inför återfuktning.</p>
+              <label for="scrub-scent">Välj doft</label>
+              <select id="scrub-scent">
+                <option value="Vanilla">Vanilla</option>
+                <option value="Citrus">Citrus</option>
+                <option value="Sandalwood">Sandalwood</option>
+              </select>
+              <div class="product-footer">
+                <span class="price">299 kr</span>
+                <button class="add-btn" type="button" onclick="addSelected('scrub','scrub-scent')">Lägg till</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card featured">
+            <div class="product-image">
+              <div class="bottle butter">
+                <div class="bottle-label">Body Butter</div>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-top">
+                <h3>Silky Body Butter</h3>
+                <span class="tag">175 ml</span>
+              </div>
+              <p>En rik, snabbt absorberande kroppssmjör som ger långvarig fukt och en mjuk finish.</p>
+              <label for="butter-scent">Välj doft</label>
+              <select id="butter-scent">
+                <option value="Vanilla">Vanilla</option>
+                <option value="Pistachio">Pistachio</option>
+                <option value="Rose">Rose</option>
+              </select>
+              <div class="product-footer">
+                <span class="price">349 kr</span>
+                <button class="add-btn" type="button" onclick="addSelected('butter','butter-scent')">Lägg till</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <div class="bottle scrub" style="height:165px;width:40%;margin-right:10px;">
+                <div class="bottle-label">Scrub</div>
+              </div>
+              <div class="bottle butter" style="height:140px;width:36%;margin-left:10px;">
+                <div class="bottle-label">Butter</div>
+              </div>
+              <span class="package-icon">Spara 50 kr</span>
+            </div>
+            <div class="product-body">
+              <div class="product-top">
+                <h3>Body Ritual-paket</h3>
+                <span class="tag">Paket</span>
+              </div>
+              <p>Det perfekta setet för den som vill ha hela rutinen i ett enkelt, smart köp.</p>
+              <label for="packScrub">Salt Scrub</label>
+              <select id="packScrub">
+                <option value="Vanilla">Vanilla</option>
+                <option value="Citrus">Citrus</option>
+                <option value="Sandalwood">Sandalwood</option>
+              </select>
+              <label for="packButter">Body Butter</label>
+              <select id="packButter">
+                <option value="Vanilla">Vanilla</option>
+                <option value="Pistachio">Pistachio</option>
+                <option value="Rose">Rose</option>
+              </select>
+              <div class="product-footer">
+                <span class="price">599 kr</span>
+                <button class="add-btn" type="button" onclick="addPackage()">Lägg till</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultat" class="section benefits">
+      <div class="wrap benefits-grid">
+        <div class="text-stack">
+          <div class="section-head" style="margin-bottom:0;max-width:600px;">
+            <p class="eyebrow">Varför kunderna älskar den</p>
+            <h2>Rutin för huden som faktiskt känns bra.</h2>
+          </div>
+
+          <div class="bullet-grid">
+            <div class="bullet-box">
+              <strong>Jämnare hud</strong>
+              Exfoliering gör huden mjukare och mer strålande.
+            </div>
+            <div class="bullet-box">
+              <strong>Djup återfuktning</strong>
+              Krämig, närande formula som sitter kvar längre.
+            </div>
+            <div class="bullet-box">
+              <strong>Enkelt att använda</strong>
+              Två steg, inga komplicerade rutiner.
+            </div>
+            <div class="bullet-box">
+              <strong>Lyxig känsla</strong>
+              Formulerad för den känsla du vill ha i badrummet.
+            </div>
+          </div>
+        </div>
+
+        <aside class="benefit-panel">
+          <h3>Så fungerar det</h3>
+          <ul class="check-list">
+            <li>Välj din favoritdoft och produkt.</li>
+            <li>Exfoliera först för att släppa loss torra celler.</li>
+            <li>Applicera kroppssmör för långvarig mjukhet.</li>
+            <li>Fyll din kroppsrutin med trygg, enkel beställning.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="kunder" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Kundomdömen</p>
+          <h2>Det här säger människor om rutinen.</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <blockquote>
+            <p>"Det känns som ett spa hemma. Huden är mjukare än på länge och produkterna luktar fantastiskt."</p>
+            <div class="person"><span class="avatar">S</span> Sofia, Stockholm</div>
+          </blockquote>
+          <blockquote>
+            <p>"Så enkelt att använda och så snyggt i badrummet. Det är en rutin jag faktiskt vill fortsätta med."</p>
+            <div class="person"><span class="avatar">M</span> Maja, Göteborg</div>
+          </blockquote>
+          <blockquote>
+            <p>"Jag älskar hur huden känns efter. Det är den perfekta kombinationen av enkelhet och lyx."</p>
+            <div class="person"><span class="avatar">A</span> Amanda, Malmö</div>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="villkor" class="section">
+      <div class="wrap faq-wrap">
+        <div class="section-head" style="margin:0;max-width:420px;">
+          <p class="eyebrow">Vanliga frågor</p>
+          <h2>Allt du behöver veta innan du beställer.</h2>
+        </div>
+
+        <div class="faq-panel">
+          <details open>
+            <summary>Hur fungerar leveransen?<span>+</span></summary>
+            <p>Vi skickar i hela Sverige med PostNord eller Budbee beroende på din valda leveransmetod. Du får en uppdatering direkt efter beställning.</p>
+          </details>
+          <details>
+            <summary>Är produkterna lämpliga för känslig hud?<span>+</span></summary>
+            <p>Ja, formuleringen är skapad för mild exfoliering och återfuktning. Testa gärna på en liten del först om du har särskilt känslig hud.</p>
+          </details>
+          <details>
+            <summary>Kan jag köpa paketet?<span>+</span></summary>
+            <p>Absolut. Body Ritual-paketet ger bästa värde och är en smart lösning för den som vill ha hela rutinen i ett köp.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap cta-box">
+        <div>
+          <p class="eyebrow">Bäst i längden</p>
+          <h2>Bygg din favorit-rutin.</h2>
+        </div>
+        <a class="btn primary" href="#produkter">Se produkterna</a>
+      </div>
+    </section>
   </main>
-  <footer><div class="wrap foot"><div><a class="brand" href="#">NORDIC BEAUTY COLLECTION</a><p>Utvalda kroppsvårdsprodukter från GRATiAE. Oberoende återförsäljare.</p><p class="smallprint">Nordic Beauty Collection HB · Kontakt: info@nordicbeautycollection.se</p></div><div><p class="contact-needed">Behöver du hjälp?</p><p>Skicka ett mejl till <a href="mailto:info@nordicbeautycollection.se">info@nordicbeautycollection.se</a></p><p class="smallprint">© 2026 Nordic Beauty Collection</p></div></div></footer>
-  <div class="order" id="order" role="dialog" aria-modal="true" aria-labelledby="orderTitle"><div class="panel"><div class="panel-head"><div><p class="eyebrow">Beställningsförfrågan</p><h2 id="orderTitle">Din kundvagn</h2></div><button class="close" type="button" aria-label="Stäng kundvagn" onclick="closeCart()">✕</button></div><div id="cartLines" class="cart-lines"></div><div class="total"><span>Totalt</span><span id="cartTotal">0 kr</span></div><div class="order-form"><label><input id="customerName" type="text" placeholder="Ditt namn"></label><label><select id="delivery"><option value="Hemleverans">Hemleverans</option><option value="Hämta i butik">Hämta i butik</option></select></label><button type="button" onclick="copyOrder()">Skicka beställning</button></div></div></div>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <a class="brand" href="#top">NORDIC BEAUTY COLLECTION</a>
+        <p>Utvalda kroppsvårdsprodukter från GRATiAE. Oberoende återförsäljare.</p>
+      </div>
+      <p class="smallprint">© 2025 Nordic Beauty Collection</p>
+    </div>
+  </footer>
+
+  <div class="order" id="order" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+    <div class="panel">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Beställningsförfrågan</p>
+          <h2 id="orderTitle">Din kundvagn</h2>
+        </div>
+        <button class="close" type="button" aria-label="Stäng" onclick="closeCart()">×</button>
+      </div>
+
+      <div class="cart-list" id="cartLines"></div>
+
+      <div class="panel-summary">
+        <div class="summary-row"><span>Summa</span><strong id="cartTotal">0 kr</strong></div>
+
+        <label for="customerName">Ditt namn</label>
+        <input id="customerName" type="text" placeholder="Skriv ditt namn" />
+
+        <label for="delivery">Leverans</label>
+        <select id="delivery">
+          <option value="PostNord">PostNord</option>
+          <option value="Budbee">Budbee</option>
+          <option value="Kund hämtar">Kund hämtar</option>
+        </select>
+
+        <button class="btn primary wide" type="button" onclick="copyOrder()">Skicka beställning</button>
+      </div>
+    </div>
+  </div>
+
   <div class="toast" id="toast" role="status">Tillagt i beställningen</div>
+
   <script>
-    const products={};
-    const cart={};
-    const order=document.getElementById('order');
-    function count(){return Object.values(cart).reduce((sum,n)=>sum+n,0)}
-    function money(value){return value.toLocaleString('sv-SE')+' kr'}
-    function addLine(key,name,price){if(!products[key])products[key]={name,price};cart[key]=(cart[key]||0)+1;render();showToast(name+' är tillagd')}
-    function addSelected(type,selectId){const scent=document.getElementById(selectId).value;if(type==='scrub')addLine('scrub-'+scent,'Salt Scrub 425 g – '+scent,299);else addLine('butter-'+scent,'Silky Body Butter 175 ml – '+scent,299)}
-    function addPackage(){const scrub=document.getElementById('packScrub').value;const butter=document.getElementById('packButter').value;addLine('pack-'+scrub+'-'+butter,'Body Ritual-paket – Scrub: '+scrub+' · Smör: '+butter,549)}
-    function change(id,delta){cart[id]=Math.max(0,cart[id]+delta);render()}
-    function render(){
-      document.getElementById('cartCount').textContent=count();
-      const lines=document.getElementById('cartLines');
-      const ids=Object.keys(cart).filter(id=>cart[id]>0);
-      lines.innerHTML=ids.map(id=>{
-        const item=products[id]||{name:'Produkt',price:0};
-        const qty=cart[id];
-        const total=item.price*qty;
-        return `<div class="cart-line"><div><div class="name">${item.name}</div><div>${money(item.price)} st</div></div><div class="controls"><button type="button" onclick="change('${id}',-1)">−</button><strong>${qty}</strong><button type="button" onclick="change('${id}',1)">+</button></div><div>${money(total)}</div></div>`;
-      }).join('') || '<p style="margin:0;color:#6e6258;">Din kundvagn är tom.</p>';
-      const total=ids.reduce((sum,id)=>sum+(products[id].price*cart[id]),0);
-      document.getElementById('cartTotal').textContent=money(total);
+    const products = {};
+    const cart = {};
+    const order = document.getElementById('order');
+
+    function count() {
+      return Object.values(cart).reduce((sum, n) => sum + n, 0);
     }
-    function openCart(){render();order.classList.add('open');document.body.style.overflow='hidden'}
-    function closeCart(){order.classList.remove('open');document.body.style.overflow=''}
-    function showToast(message){const t=document.getElementById('toast');t.textContent=message;t.classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.classList.remove('show'),1800)}
-    async function copyOrder(){const name=document.getElementById('customerName').value.trim()||'[namn]';const delivery=document.getElementById('delivery').value;const rows=Object.keys(cart).filter(id=>cart[id]>0).map(id=>`${products[id].name} x ${cart[id]}`).join('\n'); const total=Object.keys(cart).filter(id=>cart[id]>0).reduce((sum,id)=>sum+(products[id].price*cart[id]),0); const message=`Beställning från Nordic Beauty Collection\n\nKund: ${name}\nLeverans: ${delivery}\n\n${rows}\n\nTotalt: ${money(total)}\n\nSkicka denna order till kundservice.`; await navigator.clipboard.writeText(message); showToast('Beställningen kopierades');}
-    order.addEventListener('click',e=>{if(e.target===order)closeCart()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCart()});render();
+
+    function money(value) {
+      return value.toLocaleString('sv-SE') + ' kr';
+    }
+
+    function addLine(key, name, price) {
+      if (!products[key]) products[key] = { name, price };
+      cart[key] = (cart[key] || 0) + 1;
+      render();
+      showToast(name + ' är tillagd');
+    }
+
+    function addSelected(type, selectId) {
+      const scent = document.getElementById(selectId).value;
+      if (type === 'scrub') {
+        addLine('scrub-' + scent, 'Salt Scrub 425 g – ' + scent, 299);
+      } else {
+        addLine('butter-' + scent, 'Silky Body Butter 175 ml – ' + scent, 349);
+      }
+    }
+
+    function addPackage() {
+      const scrub = document.getElementById('packScrub').value;
+      const butter = document.getElementById('packButter').value;
+      addLine('pack-' + scrub + '-' + butter, 'Body Ritual-paket – ' + scrub + ' / ' + butter, 599);
+    }
+
+    function change(id, delta) {
+      cart[id] = Math.max(0, (cart[id] || 0) + delta);
+      render();
+    }
+
+    function render() {
+      document.getElementById('cartCount').textContent = count();
+
+      const lines = document.getElementById('cartLines');
+      const ids = Object.keys(cart).filter(id => cart[id] > 0);
+
+      lines.innerHTML = ids.map(id => {
+        const item = products[id] || { name: 'Produkt', price: 0 };
+        const qty = cart[id];
+        const total = item.price * qty;
+        return `
+          <div class="cart-line">
+            <div>
+              <div class="name">${item.name}</div>
+              <div>${money(item.price)} st</div>
+            </div>
+            <div class="controls">
+              <button class="qty-btn" type="button" onclick="change('${id}', -1)">−</button>
+              <strong>${qty}</strong>
+              <button class="qty-btn" type="button" onclick="change('${id}', 1)">+</button>
+              <strong>${money(total)}</strong>
+            </div>
+          </div>
+        `;
+      }).join('') || '<p style="margin:0;color:#6e6258;">Din kundvagn är tom.</p>';
+
+      const total = ids.reduce((sum, id) => sum + (products[id].price * cart[id]), 0);
+      document.getElementById('cartTotal').textContent = money(total);
+    }
+
+    function openCart() {
+      render();
+      order.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCart() {
+      order.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function showToast(message) {
+      const t = document.getElementById('toast');
+      t.textContent = message;
+      t.classList.add('show');
+      clearTimeout(window.toastTimer);
+      window.toastTimer = setTimeout(() => t.classList.remove('show'), 1800);
+    }
+
+    async function copyOrder() {
+      const name = document.getElementById('customerName').value.trim() || '[namn]';
+      const delivery = document.getElementById('delivery').value;
+      const rows = Object.keys(cart)
+        .filter(id => cart[id] > 0)
+        .map(id => {
+          const item = products[id] || { name: 'Produkt', price: 0 };
+          return `- ${item.name} x${cart[id]} = ${money(item.price * cart[id])}`;
+        })
+        .join('\n');
+
+      const total = Object.keys(cart)
+        .filter(id => cart[id] > 0)
+        .reduce((sum, id) => sum + products[id].price * cart[id], 0);
+
+      const message = `Beställningsförfrågan\nNamn: ${name}\nLeverans: ${delivery}\n\n${rows || '- Inga produkter vald'}\n\nTotalt: ${money(total)}`;
+
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(message);
+        }
+        showToast('Beställning kopierad');
+      } catch (error) {
+        showToast('Beställning klar – kopiera manuellt');
+      }
+    }
+
+    order.addEventListener('click', e => {
+      if (e.target === order) closeCart();
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeCart();
+    });
+
+    render();
   </script>
 </body>
 </html>
